@@ -1,7 +1,6 @@
 import exemplo.Lote;
 import exemplo.Produto;
 
-
 public class Sistema {
 
 	public static void main(String[] args) {

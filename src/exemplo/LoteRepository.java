@@ -1,6 +1,8 @@
 package exemplo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class LoteRepository {
@@ -25,4 +27,15 @@ public class LoteRepository {
     public Lote recuperarLote(String loteId) {
         return lotes.get(loteId);
     }
+
+    public List<Lote> getAll(){
+        List<Lote> lote1 = new ArrayList<Lote>();
+
+        for (String key: lotes.keySet()){
+            Lote e1 = lotes.get(key);
+            lote1.add(e1);
+        }
+        return  lote1;
+    }
+
 }
